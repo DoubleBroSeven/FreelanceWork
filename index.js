@@ -21,7 +21,7 @@ const intervalId = setInterval(() => {
     const li = document.createElement('li');
     li.innerText = `${freelancer.name} - ${freelancer.occupation} - $${freelancer.price}`;
     
-    freelancerList.appendChild(li); 
+    freelancerList.append(li); 
 
     totalDisplayedPrice += freelancer.price;
     displayedCount++;
